@@ -1,0 +1,18 @@
+{
+  "name": "dummies-and-dragons",
+  "version": "1.0.0",
+  "description": "MCI-Praktikumsprojekt: Erstellung und Verwaltung PnP-RPG-Charactersheets",
+  "main": "bin/index.js",
+  "author": "Mike Kühnapfel",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/mysql": "^2.15.6",
+    "@types/node": "^12.0.3",
+    "tslint": "^5.16.0"
+  },
+  "dependencies": {
+    "mysql": "^2.17.1",
+    "typescript": "^3.5.1"
+  }
+}
