@@ -2,7 +2,7 @@ import * as mysql from "mysql"
 
 export default class Database {
     private readonly connection: mysql.Connection
-    private readonly login: {user: string; password: string, host?: string} = {
+    private readonly login: {user: string; password: string; host?: string} = {
         password: "password",
         user: "dungeonmaster"
     }

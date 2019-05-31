@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|EB+Garamond&display=swap');
+:root {
+    --font: "EB Garamond", serif;
+    --font-accent: "Cinzel", serif;
+    --dark: #2c3e50;
+    --red: #c0392b;
+    --background: #ecf0f1;
+
+    font-family: var(--font);
+    font-size: 14pt;
+    color: var(--dark);
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1483982258113-b72862e6cff6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=80");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+    padding: 6rem 0;
+}
+
+a, button {
+    color: var(--red);
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background: none;
+    font-family: var(--font);
+    font-size: 1em;
+    font-weight: inherit;
+}
+a:hover, button:hover {
+    text-decoration: underline;
+}
+a.btn {
+    background: var(--red);
+    color: #fff;
+    display: inline-block;
+    padding: 5px 8px;
+    border: 6px double var(--background);
+}
+a.btn:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+    transition: all .3s ease-out;
+}
+
+#content {
+    background: var(--background);
+    box-shadow: 0px 2px 3px #00000033;
+    width: 80%;
+    max-width: 1280px;
+    padding: 20px;
+}
+#content.home {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, auto);
+}
+#content.notFound {
+    overflow: hidden;
+    position: relative;
+}
+#content.notFound::after {
+    content: "404";
+    display: block;
+    opacity: .2;
+    position: absolute;
+    right: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 8rem;
+}
+
+h1 {
+    font-family: var(--font-accent);
+    grid-area: 1 / 1 / 2 / 6;
+    margin: 0;
+}
+
+#rollTheDice {
+    grid-area: 1 / 6 / 2 / 7;
+}
