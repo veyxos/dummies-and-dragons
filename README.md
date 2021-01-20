@@ -1,3 +1,5 @@
+_Altes Projekt für's Studium_
+
 # Dummies and Dragons
 
 Simple web server which connects to a MySQL database to create a Dungeons and Dragons like character sheet.  
